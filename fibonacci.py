@@ -1,7 +1,7 @@
 
 
 #### with lru caching method ######### 
-'''
+
 from functools import lru_cache
 @lru_cache(maxsize=16)
 def fib(n):
@@ -10,7 +10,6 @@ def fib(n):
     return fib(n-1) + fib(n-2)
 
 print(fib(50))
-'''
 
 ######################### with memoization technique #########
 def fib(n,memo):

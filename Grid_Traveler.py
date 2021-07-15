@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jun  7 16:05:27 2021
 
-@author: Hackie_Packie
-"""
-'''
+## first method
+
 from functools import lru_cache
 @lru_cache(maxsize=16)
 
@@ -18,7 +14,8 @@ def grid_traveler(m,n):
     return grid_traveler(m-1, n) + grid_traveler(m, n-1)
 
 print(grid_traveler(18, 18))
-'''
+
+## second method
 
 def grid_traveler(m,n,memo):
     
